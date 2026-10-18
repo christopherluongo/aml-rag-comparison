@@ -1,0 +1,246 @@
+Actúa como un motor de construcción de grafos de conocimiento especializado en prevención del blanqueo de capitales, financiación del terrorismo, sanciones financieras y cumplimiento AML/CFT.
+
+Tu tarea es construir un grafo de conocimiento a partir de un corpus documental en formato JSON. Cada documento del corpus contiene metadatos y texto completo o resumen. Debes extraer entidades relevantes del dominio AML, relaciones semánticas entre ellas y evidencias textuales que justifiquen cada nodo y cada relación.
+
+IMPORTANTE: trabaja únicamente con la información contenida en el corpus proporcionado. No uses conocimiento externo. No inventes entidades, relaciones, definiciones, organismos, normas ni ejemplos que no estén presentes en los documentos.
+
+OBJETIVO
+
+A partir del JSON de documentos, genera un único JSON de grafo con:
+
+1. nodos: entidades relevantes del dominio AML;
+2. aristas: relaciones semánticas entre entidades;
+3. evidencia textual: fragmentos literales o casi literales del documento que justifican cada nodo y cada relación;
+4. trazabilidad documental: identificador del documento, título y, si existe, fuente o URL.
+
+TIPOS DE ENTIDADES PERMITIDOS
+
+Usa solo estos tipos de nodo:
+
+* concepto_aml
+* delito_origen
+* mecanismo_ocultacion
+* sujeto_obligado
+* perfil_riesgo
+* medida_prevencion
+* obligacion_normativa
+* organismo
+* normativa
+* sancion_financiera
+* jurisdiccion
+* indicador_alerta
+* documento
+* otro_relevante
+
+DESCRIPCIÓN DE LOS TIPOS
+
+concepto_aml: conceptos generales del dominio, como lavado de dinero, blanqueo de capitales, financiación del terrorismo o enfoque basado en el riesgo.
+
+delito_origen: delitos o actividades ilícitas que pueden generar fondos ilícitos, como narcotráfico, corrupción, fraude, trata de personas o delincuencia organizada.
+
+mecanismo_ocultacion: mecanismos utilizados para ocultar origen, titularidad o destino de fondos, como testaferros, sociedades pantalla, empresas fantasma, pitufeo, paraísos fiscales o estructuras offshore.
+
+sujeto_obligado: entidades o profesionales obligados a aplicar medidas AML/CFT, como entidades financieras, bancos, aseguradoras, notarios, abogados, casinos, proveedores de servicios de criptoactivos, etc.
+
+perfil_riesgo: tipos de clientes, países, productos, operaciones o situaciones asociadas a mayor o menor riesgo, como PEP, cliente de alto riesgo, jurisdicción de riesgo o tercer país de alto riesgo.
+
+medida_prevencion: medidas de prevención, control o mitigación, como KYC, diligencia debida, diligencia debida reforzada, seguimiento continuo, control interno, comunicación de operaciones sospechosas, matriz de riesgo o políticas y procedimientos.
+
+obligacion_normativa: deberes concretos establecidos por normas o autoridades, como identificar al beneficiario final, conservar documentación, comunicar por indicio, aplicar medidas reforzadas o congelar fondos.
+
+organismo: instituciones, autoridades o entidades supervisoras, como GAFI/FATF, SEPBLAC, GAFILAT, OFAC, Naciones Unidas, Unión Europea, Tesoro Público u otras unidades de inteligencia financiera.
+
+normativa: leyes, directivas, reglamentos, recomendaciones, guías o estándares, como Ley 10/2010, Real Decreto 304/2014, Directivas UE, reglamentos delegados, recomendaciones del GAFI, etc.
+
+sancion_financiera: sanciones financieras, congelación de fondos, listas de sanciones, embargos, medidas restrictivas o medidas de no proliferación.
+
+jurisdiccion: países, regiones, territorios o jurisdicciones mencionadas de forma relevante para AML/CFT.
+
+indicador_alerta: señales de alerta, patrones sospechosos o comportamientos que pueden indicar riesgo AML/CFT.
+
+documento: documento fuente del corpus, si conviene representarlo como nodo para conectar evidencias o normas.
+
+otro_relevante: usa este tipo solo si la entidad es claramente importante para el dominio pero no encaja en las categorías anteriores.
+
+TIPOS DE RELACIONES PERMITIDOS
+
+Usa solo estos tipos de relación:
+
+* define
+* regula
+* supervisa
+* exige
+* recomienda
+* prohíbe
+* sanciona
+* mitiga
+* aumenta_riesgo
+* se_aplica_a
+* identifica
+* oculta
+* facilita
+* utiliza
+* genera
+* deriva_de
+* comunica_a
+* incluye
+* equivale_a
+* relacionado_con
+
+DESCRIPCIÓN DE RELACIONES
+
+define: una norma, documento u organismo define un concepto.
+
+regula: una norma regula una materia, entidad, obligación o sujeto obligado.
+
+supervisa: un organismo supervisa a un sujeto obligado, actividad o cumplimiento.
+
+exige: una norma, organismo o medida exige una obligación concreta.
+
+recomienda: un organismo o documento recomienda una medida.
+
+prohíbe: una norma u organismo prohíbe una conducta.
+
+sanciona: una norma, organismo o régimen sancionador impone sanciones o medidas restrictivas.
+
+mitiga: una medida reduce un riesgo AML/CFT.
+
+aumenta_riesgo: una entidad, perfil, conducta o jurisdicción incrementa el riesgo.
+
+se_aplica_a: una norma, medida u obligación se aplica a un sujeto, contexto o caso.
+
+identifica: una medida permite identificar una entidad, riesgo, cliente o beneficiario final.
+
+oculta: un mecanismo oculta una entidad, origen, titularidad o destino de fondos.
+
+facilita: una entidad o mecanismo facilita otra práctica o riesgo.
+
+utiliza: una entidad, persona o esquema utiliza un mecanismo.
+
+genera: un delito o actividad genera fondos, riesgos o consecuencias.
+
+deriva_de: un riesgo, obligación o consecuencia deriva de otra entidad o situación.
+
+comunica_a: un sujeto obligado comunica una operación, indicio o información a un organismo.
+
+incluye: una entidad contiene o agrupa otra.
+
+equivale_a: dos términos son variantes terminológicas o equivalentes claros.
+
+relacionado_con: úsala solo cuando exista una relación relevante pero no pueda clasificarse de forma más precisa.
+
+REGLAS ESTRICTAS
+
+1. No inventes información.
+2. Cada nodo debe aparecer en al menos un documento.
+3. Cada arista debe estar justificada por evidencia textual.
+4. No crees relaciones si el texto solo permite una asociación vaga.
+5. Evita entidades demasiado genéricas como “riesgo”, “cliente”, “documento”, “medida” o “normativa”, salvo que estén especificadas.
+6. Consolida sinónimos claros en un único nodo. Por ejemplo:
+
+   * “lavado de dinero”, “blanqueo de capitales”, “lavado de activos” y “legitimación de capitales” pueden agruparse si el corpus los usa como equivalentes.
+   * “beneficiario final”, “titular real” y “propiedad efectiva” pueden agruparse si el corpus los presenta como equivalentes.
+   * “GAFI” y “FATF” deben tratarse como equivalentes si aparecen como variantes del mismo organismo.
+7. Mantén diferencias semánticas cuando sean relevantes. Por ejemplo, no fusiones “evasión fiscal” y “elusión fiscal” si el corpus las diferencia.
+8. Prioriza precisión sobre exhaustividad.
+9. No generes explicaciones fuera del JSON final.
+10. Devuelve únicamente JSON válido.
+
+FORMATO DE ENTRADA
+
+Recibirás un JSON con documentos. Puede tener campos como:
+
+{
+"doc_id": "...",
+"titulo": "...",
+"fuente": "...",
+"url": "...",
+"texto": "..."
+}
+
+Si los nombres de los campos cambian, interpreta razonablemente cuál es el identificador, título, fuente, URL y texto principal.
+
+FORMATO DE SALIDA
+
+Devuelve un único objeto JSON con esta estructura exacta:
+
+{
+"metadata": {
+"nombre_grafo": "grafo_aml_llm",
+"descripcion": "Grafo de conocimiento AML/CFT construido mediante extracción asistida por LLM a partir del corpus documental.",
+"idioma": "es",
+"metodo_extraccion": "LLM con ontología controlada",
+"total_nodos": 0,
+"total_aristas": 0
+},
+"nodes": [
+{
+"id": "string_en_snake_case",
+"label": "Nombre legible de la entidad",
+"type": "tipo_de_entidad",
+"aliases": ["variante 1", "variante 2"],
+"description": "Descripción breve basada solo en el corpus.",
+"evidence": [
+{
+"doc_id": "identificador del documento",
+"titulo": "título del documento",
+"fuente": "fuente si existe",
+"url": "url si existe",
+"snippet": "fragmento textual que justifica el nodo"
+}
+]
+}
+],
+"edges": [
+{
+"id": "source_relation_target",
+"source": "id_nodo_origen",
+"target": "id_nodo_destino",
+"relation": "tipo_de_relacion",
+"description": "Explicación breve de la relación basada solo en el corpus.",
+"confidence": "alta | media | baja",
+"evidence": [
+{
+"doc_id": "identificador del documento",
+"titulo": "título del documento",
+"fuente": "fuente si existe",
+"url": "url si existe",
+"snippet": "fragmento textual que justifica la relación"
+}
+]
+}
+],
+"rejected_candidates": [
+{
+"label": "candidato rechazado",
+"reason": "motivo del rechazo: demasiado genérico, sin evidencia suficiente, fuera del dominio, duplicado, etc."
+}
+]
+}
+
+CRITERIOS PARA LOS ID
+
+* Usa snake_case.
+* Usa minúsculas.
+* Elimina tildes.
+* No uses espacios.
+* Mantén el mismo id para la misma entidad en todo el grafo.
+* Ejemplos:
+
+  * "beneficiario_final"
+  * "sociedad_pantalla"
+  * "gafi"
+  * "ley_10_2010"
+  * "diligencia_debida_reforzada"
+
+CRITERIOS PARA LA CONFIANZA DE LAS ARISTAS
+
+confidence = "alta" cuando la relación esté expresada explícitamente en el texto.
+
+confidence = "media" cuando la relación sea clara, pero requiera una inferencia mínima.
+
+confidence = "baja" cuando la relación sea posible pero no esté completamente clara. Usa relaciones de confianza baja solo si son relevantes y hay evidencia suficiente.
+
+INSTRUCCIÓN FINAL
+
+Lee todo el JSON de documentos proporcionado. Extrae entidades y relaciones relevantes del dominio AML/CFT. Consolida duplicados y sinónimos. Devuelve únicamente el JSON final del grafo, sin comentarios, sin markdown y sin explicación adicional.

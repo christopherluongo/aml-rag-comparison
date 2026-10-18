@@ -1,0 +1,55 @@
+RESEARCH REPOSITORY NOTICE — PROVISIONAL
+
+Copyright (c) 2026. All rights reserved unless otherwise stated.
+
+This repository accompanies a scientific research article and is made publicly
+available for scholarly inspection, verification, and reproducibility.
+
+1. Original repository material
+
+Unless a separate license is explicitly attached to a file or directory, no
+general open-source or open-data license is granted at this stage for original
+material in this repository.
+
+The code and other original material may be relicensed under a standard open
+license after confirmation of the applicable author and institutional rights.
+
+2. Third-party and source-derived material
+
+Some repository artifacts contain excerpts, metadata, or derived
+representations based on third-party public sources. In particular, the corpus
+and derived experimental artifacts may incorporate material originating from
+the sources identified in `data/corpus_sources.csv`.
+
+This repository does not claim ownership of third-party source material and
+does not grant rights that the repository authors do not possess.
+
+Third-party content remains subject to the copyright, database rights,
+licensing terms, attribution requirements, and other conditions of the
+respective source providers and rightsholders.
+
+Original downloaded source documents are not redistributed as part of this
+repository.
+
+3. Derived artifacts
+
+Processed corpus files, the graph artifact, vector index, raw experimental
+runs, and result files are provided to document and support reproducibility of
+the reported experiment. Their inclusion does not relicense any underlying
+third-party material.
+
+4. No endorsement or warranty
+
+The material is provided for research purposes, without warranty of any kind,
+express or implied. The authors make no representation that every downstream
+use of third-party or derived material is permitted in every jurisdiction.
+
+Users are responsible for checking and complying with the terms applicable to
+the underlying sources and with applicable law.
+
+5. Future licensing
+
+This notice is intentionally conservative while the licensing status of the
+research code and institution-related rights is being confirmed. If an
+open-source or open-data license is adopted later, the repository will be
+updated explicitly and the scope of that license will be stated clearly.

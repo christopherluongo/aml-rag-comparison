@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Q001",
+    "pregunta": "¿Qué es el lavado de dinero?",
+    "tipo_pregunta": "factual simple",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "documento único",
+    "objetivo_evaluacion": "Evaluar la recuperación de una definición básica del concepto central del dominio.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "001",
+        "titulo": "Lavado de dinero"
+      }
+    ]
+  },
+  {
+    "id": "Q002",
+    "pregunta": "¿Qué es el pitufeo?",
+    "tipo_pregunta": "factual simple",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "documento único",
+    "objetivo_evaluacion": "Evaluar la recuperación de una técnica concreta de ocultación o fraccionamiento.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "014",
+        "titulo": "Pitufeo"
+      }
+    ]
+  },
+  {
+    "id": "Q003",
+    "pregunta": "¿Qué significa persona expuesta políticamente?",
+    "tipo_pregunta": "factual simple",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "documento único",
+    "objetivo_evaluacion": "Evaluar la recuperación de una definición normativa o conceptual.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "026",
+        "titulo": "Persona expuesta políticamente"
+      }
+    ]
+  },
+  {
+    "id": "Q004",
+    "pregunta": "¿Qué es la diligencia debida?",
+    "tipo_pregunta": "factual simple",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "documento único",
+    "objetivo_evaluacion": "Evaluar la recuperación de una obligación básica en materia de cumplimiento.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "025",
+        "titulo": "Diligencia debida"
+      }
+    ]
+  },
+  {
+    "id": "Q005",
+    "pregunta": "La entidad Amroggang Development Banking Corporation quiere contratar un servicio. ¿Está incluida en alguna lista de sanciones internacionales?",
+    "tipo_pregunta": "factual simple",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para localizar de forma directa una entidad o persona en listas de sanciones distribuidas en varias fuentes.",
+    "documentos_relacionados": [   
+      {
+        "doc_id": "032",
+        "titulo": "Lista consolidada sanciones UE"
+      },
+            {
+        "doc_id": "033",
+        "titulo": "Lista consolidada sanciones ONU"
+      }
+    ]
+  },
+  {
+    "id": "Q006",
+    "pregunta": "¿Cuál es la diferencia entre evasión fiscal y elusión fiscal?",
+    "tipo_pregunta": "comparativa",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para distinguir conceptos próximos.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "020",
+        "titulo": "Evasión fiscal"
+      },      
+      {
+        "doc_id": "019",
+        "titulo": "Elusión fiscal"
+      }
+    ]
+  },
+  {
+    "id": "Q007",
+    "pregunta": "¿En qué se diferencian una empresa fantasma y una organización fachada?",
+    "tipo_pregunta": "comparativa",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para distinguir entre estructuras próximas.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "011",
+        "titulo": "Empresa fantasma"
+      },      
+      {
+        "doc_id": "012",
+        "titulo": "Organización fachada"
+      }
+    ]
+  },
+  {
+    "id": "Q008",
+    "pregunta": "¿Qué diferencia existe entre dinero negro y economía sumergida?",
+    "tipo_pregunta": "comparativa",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para distinguir conceptos próximos.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "006",
+        "titulo": "Dinero negro"
+      },      
+      {
+        "doc_id": "008",
+        "titulo": "Economía sumergida"
+      }
+    ]
+  },
+  {
+    "id": "Q009",
+    "pregunta": "¿Qué relación existe entre las personas expuestas políticamente y la diligencia debida reforzada?",
+    "tipo_pregunta": "relacional",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad para relacionar riesgo, perfil del cliente y medidas de control.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "026",
+        "titulo": "Persona expuesta políticamente"
+      },
+      {
+        "doc_id": "025",
+        "titulo": "Diligencia debida"
+      },
+      {
+        "doc_id": "067",
+        "titulo": "Directrices sobre factores de riesgo"
+      }
+    ]
+  },
+  {
+    "id": "Q010",
+    "pregunta": "¿Cómo se relaciona la propiedad efectiva con el cumplimiento normativo?",
+    "tipo_pregunta": "relacional",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la conexión entre identificación de titulares reales y obligaciones de compliance.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "027",
+        "titulo": "Propiedad efectiva"
+      },
+      {
+        "doc_id": "024",
+        "titulo": "Cumplimiento normativo"
+      },
+      {
+        "doc_id": "102",
+        "titulo": "Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q011",
+    "pregunta": "¿Qué relación existe entre el narcotráfico y el lavado de dinero?",
+    "tipo_pregunta": "relacional",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la relación entre delito precedente y proceso de blanqueo.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "004",
+        "titulo": "Narcotráfico"
+      },
+      {
+        "doc_id": "001",
+        "titulo": "Lavado de dinero"
+      }
+    ]
+  },
+  {
+    "id": "Q012",
+    "pregunta": "¿Por qué las personas expuestas políticamente requieren medidas reforzadas de diligencia debida?",
+    "tipo_pregunta": "explicativa",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar una cadena de inferencias entre perfil de riesgo, exposición política y controles reforzados.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "026",
+        "titulo": "Persona expuesta políticamente"
+      },
+      {
+        "doc_id": "025",
+        "titulo": "Diligencia debida"
+      },
+      {
+        "doc_id": "067",
+        "titulo": "Directrices sobre factores de riesgo"
+      },
+      {
+        "doc_id": "102",
+        "titulo": "Ley 10/2010, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q013",
+    "pregunta": "¿Cómo contribuye la identificación del beneficiario efectivo a prevenir el blanqueo de capitales?",
+    "tipo_pregunta": "explicativa",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la conexión causal entre transparencia societaria y prevención del blanqueo.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "027",
+        "titulo": "Propiedad efectiva"
+      },
+      {
+        "doc_id": "001",
+        "titulo": "Lavado de dinero"
+      }
+    ]
+  },
+  {
+    "id": "Q014",
+    "pregunta": "¿Cómo las empresas fantasma facilitan la ocultación del origen de los fondos?",
+    "tipo_pregunta": "explicativa",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la explicación de un mecanismo de ocultación mediante una cadena conceptual.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "011",
+        "titulo": "Empresa fantasma"
+      },
+      {
+        "doc_id": "027",
+        "titulo": "Propiedad efectiva"
+      }
+    ]
+  },
+  {
+    "id": "Q015",
+    "pregunta": "¿Qué pasos debe seguir una entidad para identificar al beneficiario efectivo?",
+    "tipo_pregunta": "procedimental",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad para ordenar actuaciones o fases de un procedimiento.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "027",
+        "titulo": "Propiedad efectiva"
+      },
+      {
+        "doc_id": "088",
+        "titulo": "Directrices modificadas del European Bank Authority sobre factores de riesgo en el Blanqueo de Capitales y Financiación del Terrorismo"
+      }, 
+      {
+        "doc_id": "090",
+        "titulo": "Estándares internacionales sobre la lucha contra el lavado de activos, el financiamiento del terrorismo y el financiamiento de la proliferación de armas de destrucción masiva"
+      }
+    ]
+  },
+  {
+    "id": "Q016",
+    "pregunta": "¿Qué debe hacer una empresa para cumplir con las obligaciones de prevención del blanqueo de capitales?",
+    "tipo_pregunta": "procedimental",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la síntesis de obligaciones procedentes de distintas fuentes del corpus.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "102",
+        "titulo": "Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      },
+      {
+        "doc_id": "104",
+        "titulo": "Real Decreto 304/2014, de 5 de mayo, por el que se aprueba el Reglamento de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      },
+      {
+        "doc_id": "073",
+        "titulo": "Recomendaciones sobre las medidas de control interno para la prevención del blanqueo de capitales y de la financiación del terrorismo"
+      },
+      {
+        "doc_id": "090",
+        "titulo": "Estándares internacionales sobre la lucha contra el lavado de activos, el financiamiento del terrorismo y el financiamiento de la proliferación de armas de destrucción masiva. Actualización a diciembre de 2025"
+      },
+      {
+        "doc_id": "088",
+        "titulo": "Directrices modificadas del European Bank Authority sobre factores de riesgo en el Blanqueo de Capitales y Financiación del Terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q017",
+    "pregunta": "¿Qué actuaciones deben realizarse cuando se detecta una operación sospechosa?",
+    "tipo_pregunta": "procedimental",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "documento único",
+    "objetivo_evaluacion": "Evaluar la recuperación de pasos de actuación ante una alerta o sospecha.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "059",
+        "titulo": "Orientaciones joyeros"
+      }
+    ]
+  },
+  {
+    "id": "Q018",
+    "pregunta": "Una empresa recibe fondos desde un paraíso fiscal a través de varias sociedades pantalla. ¿Qué indicadores de riesgo deberían activarse?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la aplicación de conceptos del corpus a un escenario práctico.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "090",
+        "titulo": "Estándares internacionales sobre la lucha contra el lavado de activos, el financiamiento del terrorismo y el financiamiento de la proliferación de armas de destrucción masiva. Actualización a diciembre de 2025"
+      },
+      {
+        "doc_id": "022",
+        "titulo": "Paraíso fiscal"
+      },
+      {
+        "doc_id": "011",
+        "titulo": "Empresa fantasma"
+      },
+      {
+        "doc_id": "104",
+        "titulo": "Real Decreto 304/2014, de 5 de mayo, por el que se aprueba el Reglamento de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q019",
+    "pregunta": "Un cliente es una persona expuesta políticamente. ¿Qué medidas adicionales deberían adoptarse?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "documento único",
+    "objetivo_evaluacion": "Evaluar la aplicación práctica de medidas reforzadas a un perfil de riesgo.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "106",
+        "titulo": "Directiva UE 2024/1640 relativa a los mecanismos que deben establecer los Estados miembros a efectos de la prevención de la utilización del sistema financiero para el blanqueo de capitales o la financiación del terrorismo"
+      },
+      {
+        "doc_id": "067",
+        "titulo": "Directrices sobre factores de riesgo"
+      }
+    ]
+  },
+  {
+    "id": "Q020",
+    "pregunta": "El banco detecta transferencias fragmentadas de pequeña cuantía. ¿Qué técnica podría estar utilizándose y qué riesgo supone?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "documento único",
+    "objetivo_evaluacion": "Evaluar la identificación de una técnica de blanqueo a partir de un caso concreto.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "093",
+        "titulo": "Catálogo indicador de riesgo sectores de entidades de crédito"
+      },
+      {
+        "doc_id": "014",
+        "titulo": "Pitufeo"
+      }
+    ]
+  },
+  {
+    "id": "Q021",
+    "pregunta": "¿Qué factores de riesgo pueden justificar la clasificación de un cliente como de alto riesgo en materia de blanqueo de capitales?",
+    "tipo_pregunta": "analítica",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para identificar y sintetizar factores de riesgo.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "088",
+        "titulo": "Directrices modificadas del European Bank Authority sobre factores de riesgo en el Blanqueo de Capitales y Financiación del Terrorismo"
+      }, 
+      {
+        "doc_id": "090",
+        "titulo": "Estándares internacionales sobre la lucha contra el lavado de activos, el financiamiento del terrorismo y el financiamiento de la proliferación de armas de destrucción masiva. Actualización a diciembre de 2025"
+      }, 
+      {
+        "doc_id": "104",
+        "titulo": "Real Decreto 304/2014, de 5 de mayo, por el que se aprueba el Reglamento de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q022",
+    "pregunta": "Un cliente compra joyas y obras de arte de alto valor utilizando intermediarios y pagos difíciles de trazar. ¿Qué riesgos de blanqueo deberían considerarse?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la aplicación de indicadores sectoriales de riesgo en operaciones con objetos de valor, arte, joyas y metales preciosos.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "092",
+        "titulo": "Catálogo indicador de riesgo sectores arte, joyas y antigüedades"
+      },
+      {
+        "doc_id": "059",
+        "titulo": "Orientaciones joyeros"
+      },
+      {
+        "doc_id": "003",
+        "titulo": "Delincuencia organizada"
+      }
+    ]
+  },
+  {
+    "id": "Q023",
+    "pregunta": "¿Qué bancos fueron sancionados en 2025 por deficiencias en la prevención del blanqueo de capitales?",
+    "tipo_pregunta": "factual simple",
+    "complejidad_razonamiento": "single-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la selección de documentos pertinentes y la exclusión de documentos no relevantes.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "049",
+        "titulo": "BOE-A-2025-26201"
+      },       
+      {
+        "doc_id": "050",
+        "titulo": "BOE-A-2025-4508"
+      },       
+      {
+        "doc_id": "051",
+        "titulo": "BOE-A-2025-1797"
+      }
+    ]
+  },
+  {
+    "id": "Q024",
+    "pregunta": "¿Qué similitudes y diferencias existen entre los factores de riesgo descritos por el GAFI y los recogidos en las directrices de la Autoridad Bancaria Europea?",
+    "tipo_pregunta": "comparativa",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la comparación sistemática entre dos marcos normativos de referencia.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "090",
+        "titulo": "Estándares internacionales sobre la lucha contra el lavado de activos, el financiamiento del terrorismo y el financiamiento de la proliferación de armas de destrucción masiva. Actualización a diciembre de 2025"
+      },
+      {
+        "doc_id": "088",
+        "titulo": "Directrices modificadas del European Bank Authority sobre factores de riesgo en el Blanqueo de Capitales y Financiación del Terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q025",
+    "pregunta": "Una sociedad constituida en un paraíso fiscal, controlada mediante testaferros y vinculada a una persona expuesta políticamente solicita abrir una cuenta para realizar transferencias internacionales frecuentes. ¿Qué factores de riesgo concurren y qué medidas reforzadas deberían aplicarse?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para integrar múltiples categorías de riesgo y proponer medidas de diligencia debida reforzada.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "088",
+        "titulo": "Directrices modificadas del European Bank Authority sobre factores de riesgo en el Blanqueo de Capitales y Financiación del Terrorismo"
+      },
+      {
+        "doc_id": "058",
+        "titulo": "Guía riesgo geografico en materia de BS y FT"
+      },
+      {
+        "doc_id": "057",
+        "titulo": "Orientaciones de corresponsalia bancaria"
+      },
+      {
+        "doc_id": "104",
+        "titulo": "Real Decreto 304/2014, de 5 de mayo, por el que se aprueba el Reglamento de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q026",
+    "pregunta": "Una empresa domiciliada en Irán solicita abrir una cuenta para realizar pagos en España. ¿Qué verificaciones y medidas de control deberían aplicarse antes de aceptar la relación comercial?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la integración de sanciones internacionales, riesgo geográfico y diligencia debida.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "058",
+        "titulo": "Guía riesgo geografico en materia de BS y FT"
+      },
+      {
+        "doc_id": "036",
+        "titulo": "Sanciones financieras internacionales cuestiones generales y procedimientos especiales en materia de no proliferación"
+      },
+      {
+        "doc_id": "080",
+        "titulo": "Buenas prácticas Aplicación de listas de personas y entidades sujetas a sanciones y contramedidas financieras internacionales"
+      },
+      {
+        "doc_id": "104",
+        "titulo": "Real Decreto 304/2014, de 5 de mayo, por el que se aprueba el Reglamento de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q027",
+    "pregunta": "Una entidad financiera sospecha que un empleado podría estar colaborando con un cliente de alto riesgo para facilitar operaciones inusuales. ¿Qué indicadores de riesgo internos y operativos deberían revisarse?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para identificar señales de riesgo vinculadas a empleados, clientes de alto riesgo, operaciones inusuales y posibles fallos de control interno.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "093",
+        "titulo": "Catálogo indicador de riesgo sectores de entidades de crédito"
+      },
+      {
+        "doc_id": "073",
+        "titulo": "Recomendaciones sobre las medidas de control interno para la prevención del blanqueo de capitales y de la financiación del terrorismo"
+      },
+      {
+        "doc_id": "061",
+        "titulo": "Guidance Sound management of risks related to money laundering and financing of terrorism, revisión de 2020"
+      }
+    ]
+  },
+  {
+    "id": "Q028",
+    "pregunta": "A la hora de establecer una empresa de juego online que opera en la Unión Europea, ¿qué factores de riesgo deberían analizarse?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la aplicación de factores de riesgo a un sector especialmente vulnerable.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "096",
+        "titulo": "Catálogo indicador de riesgo sector juego"
+      },
+      {
+        "doc_id": "104",
+        "titulo": "Real Decreto 304/2014, de 5 de mayo, por el que se aprueba el Reglamento de la Ley 10/2010, de 28 de abril, de prevención del blanqueo de capitales y de la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q029",
+    "pregunta": "Una empresa que ofrece servicios de intercambio de criptoactivos desea operar en la Unión Europea. ¿Qué factores de riesgo deberían analizarse y qué medidas de diligencia debida podrían resultar necesarias?",
+    "tipo_pregunta": "caso práctico",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la aplicación de factores de riesgo y medidas de control a los proveedores de servicios de criptoactivos.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "098",
+        "titulo": "Catálogo indicador de riesgo sector proveedores servicios cripto activos"
+      },
+      {
+        "doc_id": "070",
+        "titulo": "Targeted Update on Implementation of the FATF Standards on Virtual Assets/VASPs"
+      },
+      {
+        "doc_id": "106",
+        "titulo": "Directiva UE 2024/1640 relativa a los mecanismos que deben establecer los Estados miembros a efectos de la prevención de la utilización del sistema financiero para el blanqueo de capitales o la financiación del terrorismo"
+      }
+    ]
+  },
+  {
+    "id": "Q030",
+    "pregunta": "¿Qué medidas pueden adoptar las entidades financieras para gestionar clientes de alto riesgo sin recurrir al cierre automático de sus cuentas?",
+    "tipo_pregunta": "síntesis",
+    "complejidad_razonamiento": "multi-hop",
+    "distribucion_evidencia": "múltiples documentos",
+    "objetivo_evaluacion": "Evaluar la capacidad del sistema para sintetizar estrategias del dominio.",
+    "documentos_relacionados": [
+      {
+        "doc_id": "076",
+        "titulo": "Guía para minimizar el de risking 2026"
+      },
+      {
+        "doc_id": "085",
+        "titulo": "Opinion of the European Banking Authority on ‘de-risking’"
+      },
+      {
+        "doc_id": "089",
+        "titulo": "Directrices del European Bank Authority sobre políticas y controles para la gestión eficaz de los riesgos de blanqueo de capi-tales y financiación del terrorismo (BC/FT) al proporcionar acceso a servicios financieros"
+      }
+    ]
+  }
+]

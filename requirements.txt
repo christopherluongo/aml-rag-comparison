@@ -1,0 +1,24 @@
+# Direct Python dependencies used by the experimental notebooks.
+# Exact historical package versions were not pinned in the original Colab runs.
+
+beautifulsoup4
+faiss-cpu
+lxml
+networkx
+numpy
+openpyxl
+pandas
+PyMuPDF
+python-docx
+requests
+sentence-transformers
+tqdm
+urllib3
+Wikipedia-API
+
+# System-level dependency used by the RAG notebooks:
+# - Ollama (https://ollama.com/)
+# - model: llama3.2:3b
+#
+# The original Colab notebooks also install `zstd` through apt.
+# `google.colab` is part of the Colab environment and is not a pip dependency here.

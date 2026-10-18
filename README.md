@@ -1,6 +1,6 @@
 # Comparing Vector and Graph-Augmented RAG for AML Compliance
 
-Companion repository for the manuscript **“Comparing Vector and Graph-Augmented RAG for AML Compliance: A Question-Type-Aware Evaluation”**.
+Related repository for the manuscript **“Comparing Vector and Graph-Augmented RAG for AML Compliance: A Question-Type-Aware Evaluation”**.
 
 The repository contains the processed corpus, source manifest, evaluation question bank, vector and graph RAG implementations, graph-construction prompt and graph artifact, FAISS index, raw experimental runs, and consolidated evaluation results used in the study.
 
